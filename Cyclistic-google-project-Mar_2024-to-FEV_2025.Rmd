@@ -11,9 +11,9 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Introdução
+## Introdução
 
-Este estudo de caso representa o projeto final da Certificação Profissional de Análise de Dados do Google.
+Este estudo de caso representa o projeto final da [Certificação Profissional de Análise de Dados do Google](https://www.coursera.org/account/accomplishments/specialization/C6VLHUG7QF97).
 
 Este estudo consiste na análise de dados da empresa Cyclistic, uma empresa de compartilhamento de bicicletas em Chicago, que opera cerca de 6000 bicicletas e quase 700 estações. A Cyclistic oferece dois tipos de serviços: passes diários (viagem única ou dia inteiro) e assinaturas anuais.
 
@@ -34,7 +34,7 @@ Para conduzir a análise de dados, seguirei as seis etapas recomendadas pelo Goo
 - Agir (Act)
 
 
-# Perguntar
+## Perguntar
 
 Como dito anteriormente, o cenário deste estudo de caso é encima dos dados da Cyclistic. Atualmene, a empresa oferece passes diários e assinaturas anuais. Clientes com assinaturas anuais são chamados de 'membros Cyclistic', enquanto usuários de passes diários são 'casuais'. A partir da análise financeira chegou-se a conclusão de que membros anuais são mais lucrativos e desenvolver uma estratégia de marketing visando converter os usuários casuais em membros é essencial para o crescimento da empresa. Diante disso, foram escolhidas três perguntas para serem respondidas 
 
@@ -46,18 +46,16 @@ Como dito anteriormente, o cenário deste estudo de caso é encima dos dados da 
 
 Para este estudo em questão, foi definido que a pergunta a ser seguida seria a primeira, sendo assim, o objetivo e o público foram definidos da seguinte forma:
 
-- Objetivo: Entender como membros Cyclistic e os usuários casuais usam as bicicletas de maneira diferente.
+- **Objetivo:** Entender como membros Cyclistic e os usuários casuais usam as bicicletas de maneira diferente.
 
-- Público: As partes interessadas são a diretoria de marketing e a equipe executiva da Cyclistic.
+- **Público:** As partes interessadas são a diretoria de marketing e a equipe executiva da Cyclistic.
 
 
-# Preparar
-
-## Etapa 2: Preparando os Dados
+## Preparar
 
 ### Os dados
 
-Para realizar este estudo de caso, utilizei os dados históricos de trajetos da Cyclistic para analisar e identificar tendências. Diante disso, fiz o download dos dados de trajetos da Cyclistic entre março de 2024 até fevereiro de 2025. que foram disponibilizados conforme este contrato de licença.
+Para realizar este estudo de caso, utilizei os [dados históricos de trajetos da Cyclistic](https://divvy-tripdata.s3.amazonaws.com/index.html) para analisar e identificar tendências. Diante disso, fiz o download dos dados de trajetos da Cyclistic entre março de 2024 até fevereiro de 2025. que foram disponibilizados conforme este contrato de [licença](https://divvybikes.com/data-license-agreement).
 
 Os dados estão divididos em 12 arquivos, cada um referente a um mês do ano (mar/2024 a fev/2025).
 
@@ -170,21 +168,21 @@ cyclistic <- bind_rows(mar_2024, abr_2024, mai_2024, jun_2024, jul_2024, ago_202
 
 ```
 
-# Processar
+## Processar
 
-## Etapa 3: Processando os Dados
+### Processando os Dados
 
 ```{r}
 head(cyclistic)
 ```
 
-# Contagem de linhas após a junção
+### Contagem de linhas após a junção
 
 ```{r}
 nrow(cyclistic)
 ```
 
-# Avaliação dos dados
+### Avaliação dos dados
 
 ```{r}
 str(cyclistic)
@@ -277,9 +275,9 @@ print(porcentual_valores_sujos)
 ```
 Com o térimo da limpeza, foi removido um total de 1662647 linhas com valores NA ou duplicados. O que corresponde a 28,75% do dataframe original
 
-# Analisar
+## Analisar
 
-## Análise do estudo de caso
+### Análise do estudo de caso
 
 Vizando responder a pergunta definida inicialmente "Como os membros anuais e os ciclistas casuais utilizam as bicicletas da Cyclistic de maneira diferente?", foram selecionadas as seguintes perguntas para a análise:
 
@@ -295,7 +293,7 @@ Vizando responder a pergunta definida inicialmente "Como os membros anuais e os 
 - O que os clientes casuais mais usam? Bicicletas elétricas ou a bicicleta clássica? 
 
 
-## Criando novas colunas:
+### Criando novas colunas:
 
 Para responder as perguntas, Vou precisar novas colunas baseadas na Data e Hora de saída. Para trabalhar com data e hora usei o pacote lubridate.
 
@@ -355,7 +353,7 @@ Por fim, irei verificar a quantidade de linhas que foram retiradas do dataframe
 ```{r}
 nrow(cyclistic_v2)
 ```
-## Etapa 4: Fazendo análise descritiva 
+### Fazendo análise descritiva 
 
 Agora, vamos iniciar a análise dos dados para descobrir as histórias que eles revelam sobre como cada grupo de usuários utiliza as bicicletas da Cyclistic. O objetivo é identificar padrões e comportamentos que possam ajudar a entender melhor as necessidades e preferências dos ciclistas, contribuindo para decisões mais informadas e estratégicas.
 
@@ -415,7 +413,7 @@ ggplot(duracao_media, aes(x= duracao_media_min, y= duracao_media_min, fill = mem
        legend.text = element_text(size = 14))
 ```
 
-# Compartilhar
+## Compartilhar
 
 Nesta fase do estudo, estarei usando os dados obtidos ao longo do estudo para desenvolver visualizações demonstrem os padrões de comportamento dos usuários casuais e dos usuários membros da Cyclistic.
 
@@ -548,9 +546,9 @@ ggplot(duracao_media_mes, aes(x = month, y = duracao_media, fill = member_casual
        legend.title= element_text(size = 10, face = "bold",),
        legend.text = element_text(size = 10))
 ```
-## Principais pontos a serem considerados:
 
-## Análise dos Gráficos: Principais Insights
+
+## Principais pontos a serem considerados:
 
 ### 1. Duração Média das Viagens
 - **Usuários Casuais**: Tendem a ter viagens mais longas, especialmente nos fins de semana e meses de clima favorável, sugerindo uso recreativo ou turístico.
@@ -584,9 +582,12 @@ ggplot(duracao_media_mes, aes(x = month, y = duracao_media, fill = member_casual
 ## Conclusão
 Os gráficos revelam que os usuários casuais têm um padrão de uso distinto, com viagens mais longas e esporádicas, especialmente nos fins de semana e meses de clima favorável. A Cyclistic pode aproveitar essas informações para desenvolver estratégias de marketing e ofertas personalizadas que incentivem a conversão de usuários casuais em membros assinantes, aumentando assim a base de clientes fiéis e a lucratividade da empresa.
 
-# Agir
 
-## Ações propostas para a Cyclistic:
+
+
+## Agir
+
+### Ações propostas para a Cyclistic:
 
 - Passeios exclusivos para membros, criando uma comunidade engajada e atraindo mais usuários casuais.
 
