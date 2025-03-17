@@ -6,7 +6,7 @@ Para realizar este estudo, foram extraídos [dados de trajetos da Cyclistic](htt
 
 ## Objetivo  
 
-Diante disso, o estudo tem como objetivo **identificar os fatores que influenciam a decisão dos usuários casuais da Cyclistic em se tornarem membros anuais** e desenvolver estratégias para aumentar essa conversão, impulsionando o crescimento da empresa.  
+Este estudo tem como objetivo **identificar os fatores que influenciam a decisão dos usuários casuais da Cyclistic em se tornarem membros anuais** e desenvolver estratégias para aumentar essa conversão, impulsionando o crescimento da empresa.  
 
 ## Visão Geral  
 
@@ -16,6 +16,16 @@ A **Cyclistic** é uma empresa que opera com cerca de **6.000 bicicletas e 700 e
 - **Assinaturas anuais** para membros  
 
 A partir dos dados financeiros da empresa, os analistas identificaram que **os membros anuais geram maior lucratividade**. Lily Moreno, Diretora de Marketing, acredita que a conversão de usuários casuais em membros é essencial para o crescimento da empresa, já que esses usuários já conhecem o serviço.  
+
+Diante disso, foram escolhidas três perguntas para serem respondidas 
+
+1- Como os membros anuais e os ciclistas casuais utilizam as bicicletas da Cyclistic de maneira diferente?
+
+2 - Por que os ciclistas casuais comprariam assinaturas anuais da Cyclistic?
+
+3 - Como a Cyclistic pode usar mídia digital para influenciar os ciclistas casuais a se tornarem membros?
+
+Para este estudo em questão, foi definido que a pergunta a ser seguida seria a primeira.
 
 Para estruturar a análise, serão seguidas as **seis etapas recomendadas pelo Google**:  
 
