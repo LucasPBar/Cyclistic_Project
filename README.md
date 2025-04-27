@@ -38,3 +38,12 @@ Para estruturar a análise, serão seguidas as **seis etapas recomendadas pelo G
 5. Compartilhar  
 6. Agir  
 
+---
+
+## Contato:
+
+Linkedin: www.linkedin.com/in/lucaspimentabarretto
+
+Github: https://github.com/LucasPBar
+
+Gmail: lucaspimenta1805@gmail.com
