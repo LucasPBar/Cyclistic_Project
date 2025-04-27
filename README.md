@@ -1,5 +1,7 @@
 # Análise de Dados: Estratégias para Aumentar a Conversão de Membros na Cyclistic
 
+![Image](https://github.com/user-attachments/assets/95307c8d-b9ac-4e2f-9a1b-3952c5aba63e)
+
 Este projeto é parte da conclusão do [**Certificado Profissional de Análise de Dados do Google**](https://www.coursera.org/account/accomplishments/specialization/C6VLHUG7QF97) e tem como foco um estudo de caso sobre a **Cyclistic**, que é uma empresa de serviço de compartilhamento de bicicletas em Chicago.  
 
 Para realizar este estudo, foram extraídos [dados de trajetos da Cyclistic](https://divvy-tripdata.s3.amazonaws.com/index.html) entre **março/2024 a fevereiro/2025**, disponibilizados através deste contrato de [licença](https://divvybikes.com/data-license-agreement).  
