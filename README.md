@@ -1,4 +1,4 @@
-# Análise de Dados: Estratégias para Aumentar a Conversão de Membros na Cyclistic
+# Estratégias para Aumentar a Conversão de Membros na Cyclistic
 
 ![Image](https://github.com/user-attachments/assets/95307c8d-b9ac-4e2f-9a1b-3952c5aba63e)
 
